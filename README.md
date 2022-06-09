@@ -23,7 +23,7 @@ You will need to build this app using react-native. To get started
 -- React-Navigation
 -- Header Tab switches
 
-![Alt Text](https://public-assets-healthdart.s3.eu-west-1.amazonaws.com/RPReplay_Final1654675489.gif)
+![Alt Text](UI.gif)
 
 ## Installation
 
