@@ -13,6 +13,7 @@ You will need to build this app using react-native. To get started
 
 - This app is a container app which has react-navigation, react-native-vector icons and asset files
 - In the assets/svg folder exists the asset files needed for the project
+- In the assets/data folder exists the data file needed for the project
 - The icons for the bottom navigation bar can be sourced from vector-icons library
 
 ## To do
@@ -24,6 +25,18 @@ You will need to build this app using react-native. To get started
 -- Header Tab switches
 
 ![Alt Text](UI.gif)
+
+## Think about
+- Design and layout
+- Code reusability
+- Write code as if you are working in a large team of developers
+- code neatness
+- code management
+- problem solving
+- use programming constructs like loops, if statements, arrays if needed
+
+## What we will look out for
+- We will check out your code for all the above mentioned and anything you do above and beyond the scope
 
 ## Installation
 
