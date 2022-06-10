@@ -40,7 +40,7 @@ You will need to build this app using react-native. To get started
 
 ## Installation
 
-Dillinger requires [Node.js](https://nodejs.org/) v14+ to run.
+the case requires [Node.js](https://nodejs.org/) v14+ to run.
 
 Install the dependencies and devDependencies and start the server.
 
