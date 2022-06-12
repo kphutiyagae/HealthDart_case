@@ -7,6 +7,7 @@ import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import Listcontainer from './assets/components/list-container/list-container';
 
 function HomeScreen() {
   return (
@@ -27,7 +28,8 @@ function ConsultScreen() {
 function OrderScreen() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Order Screen</Text>
+      <Text></Text>
+      <Listcontainer/>
     </View>
   );
 }
