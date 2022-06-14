@@ -6,8 +6,9 @@ import { Ionicons } from 'react-native-vector-icons';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import tw from "twrnc";
 
-import Listcontainer from './assets/components/list-container/list-container';
+import ListContainer from './assets/components/list-container/ListContainer';
 
 function HomeScreen() {
   return (
@@ -27,9 +28,8 @@ function ConsultScreen() {
 
 function OrderScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text></Text>
-      <Listcontainer/>
+    <View style={tw`flex-1 justify-center items-center bg-white`}>
+      <ListContainer/>
     </View>
   );
 }
