@@ -11,8 +11,6 @@ export default function ListContainer() {
 
   const deliveredOrderArray = getDeliveredOrders();
 
-  console.log(pendingOrderArray);
-
   return (
     <SectionList 
     sections={
@@ -54,6 +52,6 @@ function getDeliveredOrders(){
 //This function filters the data for all orders that are pending (Out for delivery, Submitted and Cancelled) and returns them as a JSON array.
 function getPendingOrders(){
 
-  const PendingOrders = orderData.filter( x => !(x.orderStatus === 'Delivered') );  
-  return PendingOrders;
+  const pendingOrders = orderData.filter( x => !(x.orderStatus === 'Delivered') );  
+  return pendingOrders;
 }
