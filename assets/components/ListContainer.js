@@ -1,14 +1,21 @@
 import React from 'react';
-import ListItem from '../list-item/ListItem';
+import ListItem from './ListItem';
 import { SectionList, Text } from 'react-native';
 import tw from "twrnc";
 
-const orderData = require('../../data/orders.json');    //Importing given order data
+const orderData = require('../data/orders.json');    //Importing given order data
+/*
+ListContainer takes in orders data, formats data to filter orders based on given criteria for each section. 
+arrays are passed to SectionList component with two sections "Pending Orders" and "Delivered Orders" , where they are mapped to custom ListItem
+components and returned to OrderScreenContainer for rendering.
+*/
 
 export default function ListContainer() {
 
+  //Function to filter orders such as to only return array of orders that are pending (including cancelled, submitted and out for delivery orders.)
   const pendingOrderArray = getPendingOrders();
 
+  //Function to filter orders such as to only return array of only orders that are delivered.
   const deliveredOrderArray = getDeliveredOrders();
 
   return (
@@ -33,7 +40,7 @@ export default function ListContainer() {
     /> }
     renderSectionHeader={({section}) => (
       <Text
-      style={tw`font-bold my-5 ml-2 text-lg`}
+      style={tw`font-bold my-5 ml-5 text-lg`}
       >{section.title}</Text>
     )}
     keyExtractor={ (item, index) => index}
