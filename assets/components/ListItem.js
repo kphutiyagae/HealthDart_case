@@ -16,7 +16,7 @@ export default function ListItem(props) {
   return (
     <View style={listItemStyles.container}>
       <View style={listItemStyles.Orderindicator}>
-        <ActiveOrderIndicator orderStatus={props.orderInfo} />
+        <ActiveOrderIndicator orderStatus={props.order_status} />
       </View>
 
       <View style={listItemStyles.orderInfo}>
@@ -43,10 +43,13 @@ const listItemStyles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     flexWrap: "nowrap",
-    backgroundColor: "#eeeeee",
+    backgroundColor: "#dddddd",
     justifyContent: "space-evenly",
     marginBottom: 10,
     padding: 20,
+    width: 360,
+    marginLeft : 20,
+    borderRadius: 3,
   },
 
   orderInfo: {

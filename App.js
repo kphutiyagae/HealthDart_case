@@ -91,7 +91,6 @@ const screenOptions = {
   tabBarInactiveTintColor: "black",
   tabBarShowIcon: true,
   tabBarIcon: ({ route }) => {
-    console.log(route);
   },
   tabBarStyle: [
     {

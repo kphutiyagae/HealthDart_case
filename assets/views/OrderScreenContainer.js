@@ -38,7 +38,7 @@ export default function OrderScreenContainer() {
               tabBarBadge: 0,
             }}
           />
-          <Stack.Screen name="Submitted orders" component={ListContainer} />
+          <Stack.Screen name="Submitted orders" component={ListContainer}/>
         </Tab.Navigator>
       </NavigationContainer>
     </View>
